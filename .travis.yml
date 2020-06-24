@@ -6,4 +6,4 @@ before_install:
   - docker build -t jmwashuma/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run jmwashuma/docker-react yarn test -- --coverage
+  - docker run jmwashuma/docker-react yarn test --coverage=true --watchAll=false
